@@ -12,7 +12,19 @@ public class StatusKelulusanPerMataKuliah   {   // bagian class
         System.out.print("NIM : ");
         String nim = sc.nextLine();
 
+        // matkul pertama 
+        System.out.println(" \n ----- Mata Kuliah 1: Algoritma dan Pemrograman ----- "); // fungsi \n membuat line (baris baru)
+        System.out.print("Nilai UTS : ");
+        int uts1 = sc.nextInt();
+        System.out.print("Nilai UAS : ");
+        int uas1 = sc.nextInt();
+        System.out.print("Nilai Tugas : ");
+        int tugas1 = sc.nextInt();
+
         
+
+
+
 
 
     }
