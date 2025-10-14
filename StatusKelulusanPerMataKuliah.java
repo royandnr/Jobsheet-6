@@ -49,7 +49,24 @@ public class StatusKelulusanPerMataKuliah   {   // bagian class
             status2 = "TIDAK LULUS";
         }
 
-        
+        // menentukan nilai akhir dalam bentuk nilai huruf seperti contoh nya "A" "B" "C" "D" "E" 
+        String huruf1;
+        if (nilaiAkhirMatkul1 > 80) {
+            huruf1 = "A";
+        } else if (nilaiAkhirMatkul1 > 73) {
+            huruf1 = "B+";
+        } else if (nilaiAkhirMatkul1 > 65) {
+            huruf1 = "B";
+        }  else if (nilaiAkhirMatkul1 > 60) {
+            huruf1 = "C+";
+        } else if (nilaiAkhirMatkul1 > 50) {
+            huruf1 = "C";
+        } else if (nilaiAkhirMatkul1 > 39) {
+            huruf1 = "D";
+        } else {
+            huruf1 = "E";
+        }
+
 
 
 
