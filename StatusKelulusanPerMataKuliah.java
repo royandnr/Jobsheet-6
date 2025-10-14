@@ -67,6 +67,12 @@ public class StatusKelulusanPerMataKuliah   {   // bagian class
             huruf1 = "E";
         }
 
+        // hitung rata rata nilai akhir dari 2 matkul
+        double rataRata = (nilaiAkhirMatkul1 + nilaiAkhirMatkul2) / 2.0; // yang dihitung nilai rata rata dari tiap matkul
+        String statusSemester;
+
+        
+
 
 
 
