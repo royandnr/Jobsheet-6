@@ -30,7 +30,30 @@ public class StatusKelulusanPerMataKuliah   {   // bagian class
         System.out.print("Nilai Tugas : ");
         int tugas2 = sc.nextInt();
 
+        // hitung nilai akhir (rata rata dari 3 nilai)
+        double nilaiAkhirMatkul1 = (uts1 + uas1 + tugas1) / 3.0 ;
+        double nilaiAkhirMatkul2 = (uts2 + uas2 + tugas2) / 3.0 ;
+
+        // menentukan status lulus setiap matkul
+        String status1;
+        if (nilaiAkhirMatkul1 >= 60) {
+            status1 = "LULUS";                  // memeriksa apakah nilai akhir atau rata" dari matkul 1 lebih dari ">=" 60 klo lebih maka akan dinyatakan "lulus" dan apabila tidak maka "tidak lulus"
+        } else {
+            status1 = "TIDAK LULUS";
+        }
+
+        String status2;
+        if (nilaiAkhirMatkul2 >= 60) {
+            status2 = "LULUS";                  // memeriksa apakah nilai akhir atau rata" dari matkul 2 lebih dari ">=" 60 klo lebih maka akan dinyatakan "lulus" dan apabila tidak maka "tidak lulus"
+        } else {
+            status2 = "TIDAK LULUS";
+        }
+
         
+
+
+
+
 
 
 
