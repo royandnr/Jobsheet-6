@@ -93,18 +93,29 @@ public class StatusKelulusanSemester   {   // bagian class
         // status semester nested if dengan or
         String statusSemester;
         if (status1.equalsIgnoreCase("TIDAK LULUS") || status2.equalsIgnoreCase("TIDAK LULUS")) {
-            statusSemester = "TIDAK LULUS";
+            statusSemester = "TIDAK LULUS (Rata-rata < 70)";
             } else {
             if (rataRata >= 70) {
                 statusSemester = "LULUS";
             } else {
-                statusSemester = "TIDAK LULUS (Rata-rata < 70)";
+                statusSemester = "TIDAK LULUS";
             }
         }
 
-
-
-
+        // menampilkan hasil
+        System.out.println("\n=========== HASIL PENILAIAN AKADEMIK ===========");
+        System.out.println("Nama : " + nama);
+        System.out.println("NIM  : " + nim);
+        System.out.println();
+        System.out.println("Mata Kuliah\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\t\tStatus");
+        System.out.println("--------------------------------------------------------------");
+        System.out.printf("Algoritma Pemrograman\t%d\t%d\t%d\t%.2f\t\t\t%s\t\t%s\n",
+                uts1, uas1, tugas1, nilaiAkhirMatkul1,  huruf1, status1);
+        System.out.printf("Struktur Data\t\t%d\t%d\t%d\t%.2f\t\t\t%s\t\t%s\n",
+                uts2, uas2, tugas2, nilaiAkhirMatkul2,  huruf2, status2);
+        System.out.println("--------------------------------------------------------------");
+        System.out.printf("Rata-rata Nilai Akhir: %.2f\n", rataRata);
+        System.out.println("Status Semester      : " + statusSemester);
 
     }
     }
