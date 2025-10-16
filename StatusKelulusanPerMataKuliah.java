@@ -1,9 +1,13 @@
-import java.util.Scanner;                       // import library
+import java.util.Scanner;                                                    // import library
 
-public class StatusKelulusanPerMataKuliah   {   // bagian class
+public class StatusKelulusanPerMataKuliah {          // bagian class
+    public static void main(String[] args) {            // Method Main
+        Scanner sc = new Scanner(System.in);            // perintah atau statement
 
-    public static void main(String[] args) {    // Method Main
-        Scanner sc = new Scanner(System.in);    // perintah atau statement
+        // deklarai variabel
+        int uts, uas, tugas;
+        double nilaiAkhir;
+        String nilaiHuruf, kualifikasi;
 
         // input data mahasiswa
         System.out.println("===== INPUT DATA MAHASISWA ====="); 
@@ -12,75 +16,7 @@ public class StatusKelulusanPerMataKuliah   {   // bagian class
         System.out.print("NIM : ");
         String nim = sc.nextLine();
 
-        // matkul pertama algoritma dan pemrograman
-        System.out.println(" \n ----- Mata Kuliah 1: Algoritma dan Pemrograman ----- "); // fungsi \n membuat line (baris baru)
-        System.out.print("Nilai UTS : ");
-        int uts1 = sc.nextInt();
-        System.out.print("Nilai UAS : ");
-        int uas1 = sc.nextInt();
-        System.out.print("Nilai Tugas : ");
-        int tugas1 = sc.nextInt();
-
-        // matkul kedua struktur data
-        System.out.println("\n ----- Mata Kuliah 2: Struktur Data ----- "); // fungsi \n membuat line (baris baru)
-        System.out.print("Nilai UTS : ");
-        int uts2 = sc.nextInt();
-        System.out.print("Nilai UAS : ");
-        int uas2 = sc.nextInt();
-        System.out.print("Nilai Tugas : ");
-        int tugas2 = sc.nextInt();
-
-        // hitung nilai akhir (rata rata dari 3 nilai)
-        double nilaiAkhirMatkul1 = (uts1 + uas1 + tugas1) / 3.0 ;
-        double nilaiAkhirMatkul2 = (uts2 + uas2 + tugas2) / 3.0 ;
-
-        // menentukan status lulus setiap matkul
-        String status1;
-        if (nilaiAkhirMatkul1 >= 60) {
-            status1 = "LULUS";                  // memeriksa apakah nilai akhir atau rata" dari matkul 1 lebih dari ">=" 60 klo lebih maka akan dinyatakan "lulus" dan apabila tidak maka "tidak lulus"
-        } else {
-            status1 = "TIDAK LULUS";
-        }
-
-        String status2;
-        if (nilaiAkhirMatkul2 >= 60) {
-            status2 = "LULUS";                  // memeriksa apakah nilai akhir atau rata" dari matkul 2 lebih dari ">=" 60 klo lebih maka akan dinyatakan "lulus" dan apabila tidak maka "tidak lulus"
-        } else {
-            status2 = "TIDAK LULUS";
-        }
-
-        // menentukan nilai akhir dalam bentuk nilai huruf seperti contoh nya "A" "B" "C" "D" "E" 
-        String huruf1;
-        if (nilaiAkhirMatkul1 > 80) {
-            huruf1 = "A";
-        } else if (nilaiAkhirMatkul1 > 73) {
-            huruf1 = "B+";
-        } else if (nilaiAkhirMatkul1 > 65) {
-            huruf1 = "B";
-        }  else if (nilaiAkhirMatkul1 > 60) {
-            huruf1 = "C+";
-        } else if (nilaiAkhirMatkul1 > 50) {
-            huruf1 = "C";
-        } else if (nilaiAkhirMatkul1 > 39) {
-            huruf1 = "D";
-        } else {
-            huruf1 = "E";
-        }
-
-        // hitung rata rata nilai akhir dari 2 matkul
-        double rataRata = (nilaiAkhirMatkul1 + nilaiAkhirMatkul2) / 2.0; // yang dihitung nilai rata rata dari tiap matkul
-        String statusSemester;
-
         
-
-
-
-
-
-
-
-
-
-
     }
+    
 }
