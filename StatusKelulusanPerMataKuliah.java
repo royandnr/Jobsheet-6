@@ -104,7 +104,7 @@ public class StatusKelulusanPerMataKuliah {          // bagian class
 
         // menampilkan hasil nilai akhir matkul kedua 
         System.out.println(" \n ----- Keterangan Lulus atau Tidak Lulus Mata Kuliah 2: Struktur Data ----- ");
-        System.out.println("\nNilai Akhir : " + nilaiAkhir2);
+        System.out.println("\nNilai Akhir : " + nilaiAkhir2);   // \n (newline) memebuat baris baru
         System.out.println("Nilai Huruf : " + nilaiHuruf2);
         System.out.println("Kualifikasi : " + kualifikasi2);
         if (nilaiAkhir2 >= 60)
