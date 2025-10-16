@@ -41,7 +41,7 @@ public class StatusKelulusanPerMataKuliah {          // bagian class
         String nilaiHuruf;
         String kualifikasi;
 
-        if (nilaiAkhir > 80 && nilaiAkhir <= 100) {
+        if (nilaiAkhir > 80 && nilaiAkhir <= 100) {     // jika nilai akhir lebih dari 80 dan kurang dari sama dengan 100 maka nilai hurufnya "A" dan kualifikasinya "Sangat Baik"
             nilaiHuruf = "A";
             kualifikasi = "Sangat Baik";
         } else if (nilaiAkhir > 73 && nilaiAkhir <= 80) {
