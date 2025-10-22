@@ -31,8 +31,8 @@ public class StatusKelulusanSemester   {   // bagian class
         int tugas2 = sc.nextInt();
 
         // hitung nilai akhir (rata rata dari 3 nilai)
-        double nilaiAkhirMatkul1 = (uts1 * 0.3) + (uas1 * 0.4)+ (tugas1 * 0.3) / 3.0 ;
-        double nilaiAkhirMatkul2 = (uts2 * 0.3) + (uas2 * 0.4)+ (tugas2 * 0.3) / 3.0 ;
+        double nilaiAkhirMatkul1 = (uts1 * 0.3) + (uas1 * 0.4)+ (tugas1 * 0.3) ;
+        double nilaiAkhirMatkul2 = (uts2 * 0.3) + (uas2 * 0.4)+ (tugas2 * 0.3) ;
 
         // konversi nilai ke huruf menggunakan if else
         String huruf1, huruf2;
@@ -87,7 +87,7 @@ public class StatusKelulusanSemester   {   // bagian class
         }
 
         // hitung rata rata nilai akhir dari 2 matkul
-        double rataRata = (nilaiAkhirMatkul1 + nilaiAkhirMatkul2) / 2.0; // yang dihitung nilai rata rata dari tiap matkul
+        double rataRata = (nilaiAkhirMatkul1 + nilaiAkhirMatkul2) / 2; // yang dihitung nilai rata rata dari tiap matkul
         
  
         // status semester nested if dengan or
@@ -108,12 +108,12 @@ public class StatusKelulusanSemester   {   // bagian class
         System.out.println("NIM  : " + nim);
         System.out.println();
         System.out.println("Mata Kuliah\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\t\tStatus");
-        System.out.println("--------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------");
         System.out.printf("Algoritma Pemrograman\t%d\t%d\t%d\t%.2f\t\t\t%s\t\t%s\n",
                 uts1, uas1, tugas1, nilaiAkhirMatkul1,  huruf1, status1);
         System.out.printf("Struktur Data\t\t%d\t%d\t%d\t%.2f\t\t\t%s\t\t%s\n",
                 uts2, uas2, tugas2, nilaiAkhirMatkul2,  huruf2, status2);
-        System.out.println("--------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------");
         System.out.printf("Rata-rata Nilai Akhir: %.2f\n", rataRata);
         System.out.println("Status Semester      : " + statusSemester);
 
